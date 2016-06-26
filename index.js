@@ -103,7 +103,7 @@ app.post('/webhook', (req, res) => {
       );
     } else if (msg) {
       // We received a text message
-
+        console.log("Message recieved from FB: " + msg);
       // Let's forward the message to the Wit.ai Bot Engine
       // This will run all actions until our bot has nothing left to do
       wit.runActions(
